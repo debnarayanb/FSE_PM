@@ -1,0 +1,432 @@
+Started by user Debnarayan Banerjee
+Running as SYSTEM
+Building in workspace C:\MyPrograms\Jenkins\workspace\FSE_PM
+No credentials specified
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/debnarayanb/FSE_PM.git # timeout=10
+Fetching upstream changes from https://github.com/debnarayanb/FSE_PM.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress -- https://github.com/debnarayanb/FSE_PM.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision f5fa14306df5c16c712ef25db8b73f1f3b34f9d8 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f f5fa14306df5c16c712ef25db8b73f1f3b34f9d8 # timeout=10
+Commit message: "Uploading to git"
+ > git.exe rev-list --no-walk f5fa14306df5c16c712ef25db8b73f1f3b34f9d8 # timeout=10
+[FSE_PM] $ cmd /c call C:\WINDOWS\TEMP\jenkins6903225116911029999.bat
+
+C:\MyPrograms\Jenkins\workspace\FSE_PM>cd client 
+
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client>call npm install 
+npm WARN @angular/http@7.2.15 requires a peer of @angular/core@7.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN @angular/http@7.2.15 requires a peer of @angular/platform-browser@7.2.15 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\watchpack\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\karma\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\@angular\compiler-cli\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.0.7 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.0.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+audited 17103 packages in 83.568s
+found 14 vulnerabilities (4 moderate, 10 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+ Volume in drive C has no label.
+ Volume Serial Number is 1229-4EFF
+
+ Directory of C:\MyPrograms\Jenkins\workspace\FSE_PM\client
+
+12/14/2019  05:22 PM    <DIR>          .
+12/14/2019  05:22 PM    <DIR>          ..
+12/14/2019  05:07 PM               259 .editorconfig
+12/14/2019  05:07 PM               677 .gitignore
+12/14/2019  05:07 PM             3,544 angular.json
+12/14/2019  05:07 PM               440 browserslist
+12/14/2019  06:32 PM    <DIR>          dist
+12/14/2019  05:07 PM    <DIR>          e2e
+12/14/2019  05:07 PM             1,050 karma.conf.js
+12/14/2019  07:01 PM    <DIR>          node_modules
+12/14/2019  05:07 PM           437,840 package-lock.json
+12/14/2019  05:07 PM             1,476 package.json
+12/14/2019  05:07 PM             1,050 README.md
+12/14/2019  05:07 PM    <DIR>          src
+12/14/2019  05:07 PM               224 tsconfig.app.json
+12/14/2019  05:07 PM               569 tsconfig.json
+12/14/2019  05:07 PM               288 tsconfig.spec.json
+12/14/2019  05:07 PM             2,079 tslint.json
+              12 File(s)        449,496 bytes
+               6 Dir(s)  88,183,058,432 bytes free
+
+> client@0.0.0 ng C:\MyPrograms\Jenkins\workspace\FSE_PM\client
+> ng "build"
+
+
+chunk {main} main-es2015.js, main-es2015.js.map (main) 114 kB [initial] [rendered]
+chunk {polyfills} polyfills-es2015.js, polyfills-es2015.js.map (polyfills) 251 kB [initial] [rendered]
+chunk {runtime} runtime-es2015.js, runtime-es2015.js.map (runtime) 6.09 kB [entry] [rendered]
+chunk {styles} styles-es2015.js, styles-es2015.js.map (styles) 16.3 kB [initial] [rendered]
+chunk {vendor} vendor-es2015.js, vendor-es2015.js.map (vendor) 6.73 MB [initial] [rendered]
+Date: 2019-12-15T00:04:24.606Z - Hash: 815888c94d2eaaa48812 - Time: 126005ms
+
+chunk {main} main-es5.js, main-es5.js.map (main) 119 kB [initial] [rendered]
+chunk {polyfills} polyfills-es5.js, polyfills-es5.js.map (polyfills) 558 kB [initial] [rendered]
+chunk {runtime} runtime-es5.js, runtime-es5.js.map (runtime) 6.09 kB [entry] [rendered]
+chunk {styles} styles-es5.js, styles-es5.js.map (styles) 16.3 kB [initial] [rendered]
+chunk {vendor} vendor-es5.js, vendor-es5.js.map (vendor) 6.87 MB [initial] [rendered]
+Date: 2019-12-15T00:06:21.371Z - Hash: c42c839bb1bdf7b556f9 - Time: 116242ms
+Path To MSBuild.exe: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe
+Executing the command cmd.exe /C " chcp 1252 & "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe" C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.sln " && exit %%ERRORLEVEL%% from C:\MyPrograms\Jenkins\workspace\FSE_PM
+[FSE_PM] $ cmd.exe /C " chcp 1252 & "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe" C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.sln " && exit %%ERRORLEVEL%%
+Active code page: 1252
+Microsoft (R) Build Engine version 15.8.169+g1ccb72aefa for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 12/14/2019 7:06:23 PM.
+Project "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Debug|Any CPU".
+Project "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.sln" (1) is building "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj" (2) on node 1 (default targets).
+EntityDeployNonEmbeddedResources:
+Skipping target "EntityDeployNonEmbeddedResources" because it has no outputs.
+EntityDeployEmbeddedResources:
+Skipping target "EntityDeployEmbeddedResources" because all output files are up-to-date with respect to the input files.
+_HandlePackageFileConflicts:
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets(33,5): message NETSDK1041: Encountered conflict between 'Reference:System.Runtime' and 'Platform:System.Runtime.dll'.  NETSDK1033: Choosing 'Platform:System.Runtime.dll' because AssemblyVersion '4.1.2.0' is greater than '4.0.0.0'. [C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets(33,5): message NETSDK1041: Encountered conflict between 'Reference:System.Runtime.InteropServices' and 'Platform:System.Runtime.InteropServices.dll'.  NETSDK1033: Choosing 'Platform:System.Runtime.InteropServices.dll' because AssemblyVersion '4.1.2.0' is greater than '4.0.0.0'. [C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets(33,5): message NETSDK1041: Encountered conflict between 'Reference:System.Threading.Thread' and 'Platform:System.Threading.Thread.dll'.  NETSDK1033: Choosing 'Platform:System.Threading.Thread.dll' because AssemblyVersion '4.0.2.0' is greater than '4.0.0.0'. [C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj]
+ResolveAssemblyReferences:
+  Primary reference "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL".
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(2110,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj]
+          For SearchPath "{CandidateAssemblyFiles}".
+          Considered "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\packages\MSTest.TestAdapter.1.2.0\build\net45\..\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll",
+  			but its name "Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter"
+  			didn't match the expected name "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL".
+          Considered "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\packages\MSTest.TestAdapter.1.2.0\build\net45\..\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll",
+  			but its name "Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface"
+  			didn't match the expected name "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL".
+          Considered "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\packages\MSTest.TestAdapter.1.2.0\build\net45\..\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll",
+  			but its name "Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices"
+  			didn't match the expected name "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL".
+          For SearchPath "{HintPathFromItem}".
+          Considered "..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll",
+  			but its name "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+  			didn't match the expected name "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\AssemblyFolders.config,v4.7.2}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PublicAssemblies\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PublicAssemblies\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PublicAssemblies\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PublicAssemblies\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PublicAssemblies\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\PublicAssemblies\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\130\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\130\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\130\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "bin\".
+          Considered "bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.winmd", but it didn't exist.
+          Considered "bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll", but it didn't exist.
+          Considered "bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.exe", but it didn't exist.
+  AssemblyFoldersEx location: "{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}"
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\MSBuild\v14.0
+          C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\
+          C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\ReferenceAssemblies\v4.5\
+          C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\PublicAssemblies\
+          C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\
+          
+          
+          C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\bin\plugins\Diagnostics\
+          C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\ref\Caching\
+          C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\ReferenceAssemblies\v4.0\
+          C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Tasks
+          C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Tasks
+          C:\Program Files (x86)\Microsoft SQL Server\140\DTS\PipelineComponents\
+          C:\Program Files (x86)\Microsoft SQL Server\130\DTS\PipelineComponents\
+          C:\Program Files (x86)\Microsoft SQL Server\140\DTS\ForEachEnumerators
+          C:\Program Files (x86)\Microsoft SQL Server\130\DTS\ForEachEnumerators
+          C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Connections\
+          C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Connections\
+          C:\Program Files (x86)\Microsoft SQL Server\130\SDK\Assemblies\
+          C:\Program Files (x86)\Common Files\Microsoft Shared\VS7DEBUG\Program Files\Reference Assemblies\Microsoft\VSTA30\v11.0\.NET2.0\
+          C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\ReferenceAssemblies\v2.0\
+          C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\ref
+          C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\\PublicAssemblies
+          C:\Program Files (x86)\Microsoft Chart Controls\Assemblies
+          C:\Program Files\Microsoft SQL Server\130\DTS\Tasks
+          C:\Program Files\Microsoft SQL Server\130\DTS\PipelineComponents\
+          C:\Program Files\Microsoft SQL Server\130\DTS\ForEachEnumerators
+          C:\Program Files\Microsoft SQL Server\130\DTS\Connections\
+          C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\ref
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+_CopyFilesMarkedCopyLocal:
+  Touching "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\ProjectManager.csproj.CopyComplete".
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  ProjectManager -> C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\ProjectManager.dll
+Done Building Project "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj" (default targets).
+Project "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.sln" (1) is building "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.Tests\ProjectManager.Tests.csproj" (3) on node 1 (default targets).
+_HandlePackageFileConflicts:
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets(33,5): message NETSDK1041: Encountered conflict between 'Reference:System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL' and 'Platform:System.ValueTuple.dll'.  NETSDK1033: Choosing 'Reference:System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL' because AssemblyVersion '4.0.3.0' is greater than '4.0.2.0'. [C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.Tests\ProjectManager.Tests.csproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets(33,5): message NETSDK1041: Encountered conflict between 'Platform:System.ValueTuple.dll' and 'Reference:System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL'.  NETSDK1033: Choosing 'Reference:System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL' because AssemblyVersion '4.0.3.0' is greater than '4.0.2.0'. [C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.Tests\ProjectManager.Tests.csproj]
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+_CopyFilesMarkedCopyLocal:
+  Touching "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.Tests\obj\Debug\ProjectManager.Tests.csproj.CopyComplete".
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  ProjectManager.Tests -> C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.Tests\bin\Debug\ProjectManager.Tests.dll
+Done Building Project "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.Tests\ProjectManager.Tests.csproj" (default targets).
+Project "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.sln" (1) is building "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\PerformanceTests\PerformanceTests.csproj" (4) on node 1 (default targets).
+_HandlePackageFileConflicts:
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets(33,5): message NETSDK1041: Encountered conflict between 'Reference:System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL' and 'Platform:System.Runtime.InteropServices.RuntimeInformation.dll'.  NETSDK1033: Choosing 'Platform:System.Runtime.InteropServices.RuntimeInformation.dll' because AssemblyVersion '4.0.2.0' is greater than '4.0.0.0'. [C:\MyPrograms\Jenkins\workspace\FSE_PM\server\PerformanceTests\PerformanceTests.csproj]
+GenerateBindingRedirects:
+  No suggested binding redirects from ResolveAssemblyReferences.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+_CopyFilesMarkedCopyLocal:
+  Touching "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\PerformanceTests\obj\Debug\PerformanceTests.csproj.CopyComplete".
+_CopyOutOfDateSourceItemsToOutputDirectory:
+Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  PerformanceTests -> C:\MyPrograms\Jenkins\workspace\FSE_PM\server\PerformanceTests\bin\Debug\PerformanceTests.dll
+Done Building Project "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\PerformanceTests\PerformanceTests.csproj" (default targets).
+Done Building Project "C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.sln" (default targets).
+
+Build succeeded.
+
+"C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager.sln" (default target) (1) ->
+"C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj" (default target) (2) ->
+(ResolveAssemblyReferences target) -> 
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(2110,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj]
+
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:08.19
+[FSE_PM] $ cmd /c call C:\WINDOWS\TEMP\jenkins4023133532337312110.bat
+
+C:\MyPrograms\Jenkins\workspace\FSE_PM>rmdir /S /Q c:\Hosting\FSEPM\client 
+
+C:\MyPrograms\Jenkins\workspace\FSE_PM>xcopy C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client c:\Hosting\FSEPM\client\ /E /Y 
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\favicon.ico
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\index.html
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\main-es2015.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\main-es2015.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\main-es5.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\main-es5.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\polyfills-es2015.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\polyfills-es2015.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\polyfills-es5.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\polyfills-es5.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\runtime-es2015.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\runtime-es2015.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\runtime-es5.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\runtime-es5.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\styles-es2015.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\styles-es2015.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\styles-es5.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\styles-es5.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\vendor-es2015.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\vendor-es2015.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\vendor-es5.js
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\vendor-es5.js.map
+C:\MyPrograms\Jenkins\workspace\FSE_PM\client\dist\client\assets\images\loading.gif
+23 File(s) copied
+
+C:\MyPrograms\Jenkins\workspace\FSE_PM>rmdir /S /Q c:\Hosting\FSEPM\server 
+The system cannot find the file specified.
+
+C:\MyPrograms\Jenkins\workspace\FSE_PM>xcopy C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\* c:\Hosting\FSEPM\server\ /E /Y 
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Global.asax
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Global.asax.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\packages.config
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ProjectManager.csproj.user
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Web.config
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Web.Debug.config
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Web.Release.config
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ActionFilters\ProjectManagerExceptionFilterAttribute.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\ActionFilters\ProjectManagerLogFilterAttribute.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\App_Start\WebApiConfig.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\BC\ProjectBC.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\BC\TaskBC.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\BC\UserBC.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\EntityFramework.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\EntityFramework.SqlServer.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\EntityFramework.SqlServer.xml
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\EntityFramework.xml
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\Newtonsoft.Json.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\Newtonsoft.Json.xml
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\NLog.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\NLog.xml
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\ProjectManager.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\ProjectManager.dll.config
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\ProjectManager.pdb
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\System.Net.Http.Formatting.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\System.Net.Http.Formatting.xml
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\System.Web.Cors.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\System.Web.Http.Cors.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\System.Web.Http.Cors.xml
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\System.Web.Http.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\System.Web.Http.WebHost.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\System.Web.Http.WebHost.xml
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\System.Web.Http.xml
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\csc.exe
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\csc.exe.config
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\csc.rsp
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\csi.exe
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\csi.exe.config
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\csi.rsp
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.Managed.Core.targets
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.AppContext.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Collections.Immutable.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Console.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.IO.Compression.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.IO.FileSystem.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.IO.Pipes.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Security.AccessControl.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Security.Claims.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Security.Principal.Windows.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.ValueTuple.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Xml.XmlDocument.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Xml.XPath.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\vbc.exe
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\vbc.exe.config
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\vbc.rsp
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\VBCSCompiler.exe
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\bin\roslyn\VBCSCompiler.exe.config
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Controllers\ProjectController.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Controllers\TaskController.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Controllers\UserController.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\ParentTask.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\Project.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\ProjectManager.Context.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\ProjectManager.Context.tt
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\ProjectManager.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\ProjectManager.Designer.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\ProjectManager.edmx
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\ProjectManager.edmx.diagram
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\ProjectManager.tt
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\Task.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\DAC\User.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Models\JSendResponse.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Models\ParentTask.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Models\Project.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Models\Task.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Models\User.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\ProjectManager.csproj.CopyComplete
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\ProjectManager.csproj.CoreCompileInputs.cache
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\ProjectManager.csproj.FileListAbsolute.txt
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\ProjectManager.csprojAssemblyReference.cache
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\ProjectManager.dll
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\ProjectManager.pdb
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\edmxResourcesToEmbed\DAC\ProjectManager.csdl
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\edmxResourcesToEmbed\DAC\ProjectManager.msl
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\obj\Debug\edmxResourcesToEmbed\DAC\ProjectManager.ssdl
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Properties\AssemblyInfo.cs
+C:\MyPrograms\Jenkins\workspace\FSE_PM\server\ProjectManager\Utils\LoggingUtility.cs
+117 File(s) copied
+
+C:\MyPrograms\Jenkins\workspace\FSE_PM>exit 0 
+Finished: SUCCESS
